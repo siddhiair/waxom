@@ -1,0 +1,48 @@
+.navbar-default{
+	background-color:#2a2d30;
+	border:none;
+	margin-bottom:0;
+	@media only screen and (min-width:768px){
+		padding: 15px 0;
+	}
+	.navbar-header{
+		.navbar-brand{
+			padding: 5px 15px;
+			img{
+				height: 35px;
+				@media only screen and (min-width:991px){
+					height: 40px;
+				}
+			}
+		}
+	}
+	.navbar-collapse{
+		text-align:center;
+	}
+	.navbar-nav{
+		@media only screen and (min-width:768px){
+			float: right;
+		}
+		li{
+			a{
+				color: #fff;
+				font-weight: 500;
+				font-size: 0.8rem;
+				text-transform: uppercase;
+				@media only screen and (min-width:768px) and (max-width:991px){
+					padding: 15px 13px;
+				}
+			}
+		}
+	}
+	&.nav-float{
+		@media only screen and (min-width:768px){
+			background-color: transparent;
+			position: absolute;
+			top:0;
+			right: 0;
+			z-index: 9;
+			width: 100%;
+		}
+	}
+}

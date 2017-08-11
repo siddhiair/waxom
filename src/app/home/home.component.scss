@@ -1,0 +1,172 @@
+@import '../../variables';
+
+#home-slider-section{
+	padding: 0;
+	.carousel{
+		.carousel-indicators{
+			li{
+				background-color: rgba(255,255,255,.7);
+				border:none;
+			}
+			.active{
+				height: height + 3px;
+				width: width + 3px;
+				background-color:transparent;
+				border: 1px solid #fff;
+			}
+		}
+		.item {
+		    //-webkit-transform-style: preserve-3d;
+		  	//-moz-transform-style: preserve-3d;
+		  	//transform-style: preserve-3d;
+		  	@media only screen and (max-width:767px){
+		  		max-height: 530px;
+		  		overflow:hidden;
+		  		img{
+			  		max-width: none;
+			  		height: 100%;
+			  	}
+		  	}
+		  	.carousel-caption{
+		  		//top: 50%;
+				//transform: translateY(-50%);
+			  	//bottom: initial;
+			  	$height:height;
+			  	height: $height;
+			  	bottom:0;
+			  	top: 0;
+			  	margin: auto;
+			  	h1{
+			  		font-family: $heading-font;
+			  		font-size: 2.7rem;
+			  		font-weight: 800;
+			  		margin-top: 0;
+			  		line-height: 1.1;
+			  	}
+			  	h2{
+			  		font-family: $heading-font;
+			  		font-size: 1.8rem;
+			  		line-height: 1.1;
+			  	}
+			  	p{
+			  		max-width: 600px;
+			  		margin: 0 auto;
+			  		font-size: 1rem;
+			  		color: #eaeaea;
+			  	}
+			  	.btn{
+			  		margin-top: 30px;
+			  	}
+			}
+		}
+		.carousel-control{
+			.fa{
+				position: absolute;
+				top: 50%;
+			}
+		}
+	}
+}
+#features-section{
+	img{
+		height: 40px;
+	}
+	h2{
+		font-family: $heading-font;
+		color: $heading-color;
+		font-size: 1.3rem;
+	}
+	p{
+		color: $desc-text-color;
+		font-size: 14px;
+	}
+	hr{
+		width: 70px;
+		border: 2px solid #f4f4f4;
+	}
+}
+#idea-section{
+	padding-bottom: 0;
+	background-color:#fbfaf8;
+}
+#purchase-section{
+	padding: 10px 0 20px;
+	background: #241d1a; /* Old browsers */
+	background: -moz-linear-gradient(left, #241d1a 0%, #4e3427 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #241d1a 0%,#4e3427 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #241d1a 0%,#4e3427 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241d1a', endColorstr='#4e3427',GradientType=0 ); /* IE6-9 */
+	@media only screen and (max-width:767px){
+		text-align:center;
+		padding-bottom: 30px;
+	}
+	h1{
+		margin-bottom: 5px;
+		color: #c7b299;
+		line-height: 1.2;
+		span{
+			color: #fff;
+		}
+	}
+	h2{
+		margin-top: 0;
+		line-height: 1.2;
+		color: #917168;
+	}
+	.btn{
+		@media only screen and (min-width:768px){
+			margin-top: 27px;
+			float: right;
+		}
+	}
+}
+#projects-section{
+	.projects-filter{
+		.nav-pills{
+			text-align: center;
+			li{
+				float: none;
+				display: inline-block;
+				margin-bottom: 12px;
+				a{
+					padding: 4px 15px;
+					border-radius:3px;
+					border: 1px solid #e8e8e8;
+					color: $desc-text-color;
+				}
+			}
+			.active{
+				a{
+					background-color: #998675;
+					border: none;
+					color: #fff;
+					font-weight: 500;
+				}
+			}
+		}
+		.project-thumbnails{
+			.thumbnail{
+				border:none;
+				padding:0;
+				background-color:#fbfaf8;
+				img{
+					width: 100%;
+				}
+				.caption{
+					h3{
+						font-size: 1.2rem;
+						color: #c7b299;
+						font-family: $heading-font;
+						font-weight: 600;
+						margin: 5px 0 0;
+					}
+					.project-tag{
+						font-size: 0.8rem;
+						color: $desc-text-color;
+						margin: 0 0 12px;
+					}
+				}
+			}
+		}
+	}
+}
